@@ -1,4 +1,3 @@
-# TP_AySO_1P1C_2025_GOMEZ_EMILSE
 whoami
 cd ..
 ssh-keygen -t ed25519
