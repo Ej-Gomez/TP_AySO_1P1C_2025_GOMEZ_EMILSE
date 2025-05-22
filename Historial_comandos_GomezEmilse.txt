@@ -10,12 +10,12 @@ ls
 cd repogit/
 git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
 sudo git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
-sudo git https://github.com/ruklansi/UTNFRA_SO_1P1C_2025_Fonseca_Lucas.git
-sudo git clone https://github.com/ruklansi/UTNFRA_SO_1P1C_2025_Fonseca_Lucas.git
+sudo git https://github.com/ruklansi/UTNFRA_SO_1P1C_2025_GomezEmilse.git
+sudo git clone https://github.com/ruklansi/UTNFRA_SO_1P1C_2025_GomezEmilse.git
 ls
-ls -ld /home/repogit/UTNFRA_SO_1P1C_2025_Fonseca_Lucas
-sudo chown repogit:repogit /home/repogit/UTNFRA_SO_1P1C_2025_Fonseca_Lucas
-chmod u+w /home/repogit/UTNFRA_SO_1P1C_2025_Fonseca_Lucas
+ls -ld /home/repogit/UTNFRA_SO_1P1C_2025_GomezEmilse
+sudo chown repogit:repogit /home/repogit/UTNFRA_SO_1P1C_2025_GomezEmilse
+chmod u+w /home/repogit/UTNFRA_SO_1P1C_2025_GomezEmilse
 cd ..
 sudo cp repogit /home/vagrant/
 sudo cp -r repogit /home/vagrant/
@@ -27,9 +27,9 @@ ls
 cd UTN-FRA_SO_Examenes/202410/
 LS
 ls
-ls -ld /home/vagrant/repogit/UTNFRA_SO_1P1C_2025_Fonseca_Lucas
-sudo chown vagrant:vagrant /home/vagrant/repogit/UTNFRA_SO_1P1C_2025_Fonseca_Lucas
-chmod u+w /home/vagrant/repogit/UTNFRA_SO_1P1C_2025_Fonseca_Lucas
+ls -ld /home/vagrant/repogit/UTNFRA_SO_1P1C_2025_GomezEmilse
+sudo chown vagrant:vagrant /home/vagrant/repogit/UTNFRA_SO_1P1C_2025_GomezEmilse
+chmod u+w /home/vagrant/repogit/UTNFRA_SO_1P1C_2025_GomezEmilse
 bash ./script_Precondicion.sh 
 sudo nano script_Precondicion.sh 
 sudo chmod +x script_Precondicion.sh
@@ -37,8 +37,8 @@ bash ./script_Precondicion.sh
 source  ~/.bashrc  && history -a
 sudo apt install tree -y
 cd ..
-tree UTNFRA_SO_1P1C_2025_Fonseca_Lucas/
-cd UTNFRA_SO_1P1C_2025_Fonseca_Lucas/RTA_SCRIPT_Examen_20250515/
+tree UTNFRA_SO_1P1C_2025_GomezEmilse/
+cd UTNFRA_SO_1P1C_2025_GomezEmilse/RTA_SCRIPT_Examen_20250515/
 ls
 sudo nano Punto_A.sh 
 bash ./Punto_A.sh 
@@ -51,29 +51,29 @@ cat $HOME/.ssh/*.pub
 ls
 cd repogit/
 ls
-sudo git clone git@github.com:ruklansi/TP1_AySO.git
+sudo git clone git@github.com:Ej-Gomez/TP1_AySO.git
 cat $HOME/.ssh/*.pub
 pbcopy < ~/.ssh/id_ed25519.pub
 sudo apt install pbcopy
 git config --list
 sudo git config --list
-git config --global user.email ruklansi@gmail.com
-git config --global user.name "Lucas Fonseca"
-git config --global user.username "ruklansi"
+git config --global user.email gomezemilse70@gmail.com
+git config --global user.name "Ej-Gomez"
+git config --global user.username "Ej-Gomez"
 sudo git config --list
-sudo git clone git@github.com:ruklansi/TP1_AySO.git
-ssh-keygen -t ed25519 -C "ruklansi@gmail.com"
+sudo git clone git@github.com:Ej-Gomez/TP1_AySO.git
+ssh-keygen -t ed25519 -C "gomezemilse70@gmail.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 gh ssh-key add ~/.ssh/id_ed25519.pub --type signing
 sudo apt install gh
 gh ssh-key add ~/.ssh/id_ed25519.pub --type signing
 cat $HOME/.ssh/*.pub
-sudo git clone git@github.com:ruklansi/TP1_AySO.git
+sudo git clone git@github.com:Ej-Gomez/TP1_AySO.git
 sudo reboot
 cd repogit/
-sudo git clone git@github.com:ruklansi/TP1_AySO.git
-sudo git clone https://github.com/ruklansi/TP1_AySO.git
+sudo git clone git@github.com:Ej-Gomez/TP1_AySO.git
+sudo git clone https://github.com/Ej-Gomez/TP1_AySO.git
 ls
 cd TP1_AySO/
 pwd
@@ -105,8 +105,8 @@ git config --global --add safe.directory /home/vagrant/repogit/TP1_AySO
 git add .
 sudo git add .
 sudo git commit -m "ADD: Agregado 1er ejercicio sobre datos_usuario.txt"
-git config --global user.email "ruklansi@gmail.com"
-git config --global user.name "ruklansi"
+git config --global user.email "gomezemilse70@gmail.com"
+git config --global user.name "Ej-Gomez"
 sudo git commit -m "ADD: Agregado 1er ejercicio sobre datos_usuario.txt"
 git status
 sudo git push
@@ -116,8 +116,8 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 cat ~/.ssh/id_ed25519.pub
 git remote -v
-git remote set-url origin git@github.com:ruklansi/TP1_AySO.git
-sudo git remote set-url origin git@github.com:ruklansi/TP1_AySO.git
+git remote set-url origin git@github.com:Ej-Gomez/TP1_AySO.git
+sudo git remote set-url origin git@github.com:Ej-Gomez/TP1_AySO.git
 git remote -v
 ssh -T git@github.com
 sudo git push
@@ -125,8 +125,8 @@ sudo chown -R vagrant:vagrant ~/.ssh
 chmod 600 ~/.ssh/id_ed25519
 chmod 644 ~/.ssh/id_ed25519.pub
 sudo chown -R vagrant:vagrant /home/vagrant/repogit/TP1_AySO
-git config --global user.name "Lucas Fonseca"
-git config --global user.email "ruklansi@gmail.com"
+git config --global user.name "GomezEmilse"
+git config --global user.email "gomezemilse70@gamilcom"
 git push
 cat /proc/cpuinfo
 grep "model name" /proc/cpuinfo | tail -n1 >> datos_usuarios.txt
@@ -142,7 +142,7 @@ git add .
 git commit -m "feat: Añadiendo información de CPU"
 git push
 cat <<EOF >> README.md
-Alumno: Lucas David Fonseca
+Alumno: Gomez Emilse Jacqueline
 División: 314
 Turno: Noche
 EOF
